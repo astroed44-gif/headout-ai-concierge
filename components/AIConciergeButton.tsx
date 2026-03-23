@@ -358,7 +358,7 @@ export default function AIConciergeButton() {
 
           {/* Chat Window */}
           <div
-            className="relative bg-white flex flex-col overflow-hidden sm:shadow-2xl w-full h-[100dvh] sm:w-[400px] sm:h-[680px] sm:rounded-2xl z-10"
+            className="absolute inset-0 sm:relative sm:inset-auto bg-white flex flex-col overflow-hidden sm:shadow-2xl w-full h-full sm:w-[400px] sm:h-[680px] sm:rounded-2xl z-10"
           >
             {/* Header */}
             <div className="flex items-center justify-between px-4 py-3.5 bg-gradient-to-r from-purple-600 via-purple-600 to-purple-700 text-white flex-shrink-0">
