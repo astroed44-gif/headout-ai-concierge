@@ -40,7 +40,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       <Navbar onSearch={setSearchQuery} searchQuery={searchQuery} />
 
-      <div className="pt-[104px]">
+      <div className="pt-[64px] md:pt-[104px]">
         {!isFiltering && <HeroSection onSearch={setSearchQuery} />}
 
         <CategoryCarousel

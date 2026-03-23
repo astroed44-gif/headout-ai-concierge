@@ -349,7 +349,7 @@ export default function AIConciergeButton() {
 
       {/* Chat Modal */}
       {open && (
-        <div className="fixed inset-0 z-50 flex sm:items-center justify-end p-0 sm:p-6 bg-white sm:bg-transparent">
+        <div className="fixed inset-0 z-[60] flex sm:items-center sm:justify-center p-0 sm:p-6 bg-white sm:bg-transparent">
           {/* Backdrop (Desktop Only) */}
           <div
             className="hidden sm:block absolute inset-0 bg-black/30 backdrop-blur-[2px]"
@@ -358,7 +358,7 @@ export default function AIConciergeButton() {
 
           {/* Chat Window */}
           <div
-            className="relative bg-white flex flex-col overflow-hidden sm:shadow-2xl w-full h-full sm:w-[400px] sm:h-[680px] sm:rounded-2xl"
+            className="relative bg-white flex flex-col overflow-hidden sm:shadow-2xl w-full h-[100dvh] sm:w-[400px] sm:h-[680px] sm:rounded-2xl z-10"
           >
             {/* Header */}
             <div className="flex items-center justify-between px-4 py-3.5 bg-gradient-to-r from-purple-600 via-purple-600 to-purple-700 text-white flex-shrink-0">
@@ -477,7 +477,7 @@ export default function AIConciergeButton() {
             {/* Quick Prompts (only at start) */}
             {messages.length === 1 && (
               <div className="px-4 pb-2 flex gap-2 overflow-x-auto scrollbar-hide flex-shrink-0">
-                {["Best for families", "Budget-friendly", "Romantic date ideas", "Skip the queues"].map((p) => (
+                {["Top-rated guided tours", "Skip-the-line tickets", "Best combo deals", "Unique local experiences"].map((p) => (
                   <button
                     key={p}
                     onClick={() => {

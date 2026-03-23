@@ -34,18 +34,18 @@ export default function HeroSection({ onSearch }: HeroSectionProps) {
               attractions, and unmissable things to do.
             </p>
             <form onSubmit={handleSubmit} className="relative">
-              <div className="flex items-center bg-white rounded-full shadow-lg border border-gray-100 overflow-hidden pr-2">
-                <Search className="absolute left-5 text-gray-400 w-5 h-5" />
+              <div className="flex items-center bg-white rounded-full shadow-lg border border-gray-100 overflow-hidden p-1 sm:pr-2">
+                <Search className="absolute left-4 sm:left-5 text-gray-400 w-4 h-4 sm:w-5 sm:h-5" />
                 <input
                   type="text"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder="Search for experiences, cities..."
-                  className="flex-1 pl-14 pr-4 py-4 text-base focus:outline-none bg-transparent text-gray-800 placeholder-gray-400"
+                  className="flex-1 w-[50%] pl-10 sm:pl-14 pr-2 sm:pr-4 py-3 sm:py-4 text-sm sm:text-base focus:outline-none bg-transparent text-gray-800 placeholder-gray-400"
                 />
                 <button
                   type="submit"
-                  className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2.5 rounded-full font-semibold text-sm transition-colors"
+                  className="bg-purple-600 hover:bg-purple-700 text-white px-5 sm:px-6 py-2 sm:py-2.5 rounded-full font-semibold text-sm transition-colors ml-auto mr-1 sm:mr-0"
                 >
                   Search
                 </button>
